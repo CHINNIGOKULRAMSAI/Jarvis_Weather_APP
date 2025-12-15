@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- Header -->
+    <header>
+      <h1>🌦️ Weather Dashboard</h1>
+      <p>Real-time weather insights</p>
+    </header>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <!-- Loading -->
+    <div id="loading" class="hidden">Loading weather...</div>
+
+    <!-- Weather Content -->
+    <div id="weatherContent" class="hidden">
+
+      <!-- Current Weather -->
+      <div class="card main-card">
+        <h2 id="cityName">City</h2>
+        <div class="temp">
+          <span id="temperature">--</span>°C
+        </div>
+        <p id="description">Condition</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="card">
+          <h4>Humidity</h4>
+          <p id="humidity">--%</p>
+        </div>
+        <div class="card">
+          <h4>Wind</h4>
+          <p id="wind">-- m/s</p>
+        </div>
+        <div class="card">
+          <h4>Pressure</h4>
+          <p id="pressure">-- hPa</p>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="card">
+        <canvas id="tempChart"></canvas>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

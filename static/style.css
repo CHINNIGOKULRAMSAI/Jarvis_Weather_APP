@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #cbd5f5;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 60%;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+.search-box button:hover {
+  background: #0ea5e9;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.main-card {
+  text-align: center;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2rem;
+}
